@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Wheel</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <main class="bg-dark bg-gradient">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient" id="topNavBar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Decision Wheel</a>
+            </div>
+        </nav>
+        <div class="container py-3" id="page-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card rounded-0 shadow">
+                        <div class="card-header">
+                            <h4 class="card-title">Item Forms</h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="" id="item-form">
+                                <div class="d-flex w-100 mb-3 item-label">
+                                    <div class="col-10">
+                                        <div class="form-group">
+                                            <input type="text" name="item_text" class="form-control form-control-sm rounded-0" placeholder="label">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <button class="btn btn-outline-danger btn-sm rounded-0 rem-item" type="button">X</button>
+                                    </div>
+                                </div>
+                                <div class="form-group text-end">
+                                    <button class="btn btn-outline-primary rounded-0 btn-sm" type="button" id="new_item">Add Item</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary bg-gradient btn-sm rounded-0" type="submit" form="item-form">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card rounded-0 shadow">
+                        <div class="card-body">
+                            <div class="d-flex w-100 justify-content-center align-items-center mb-3">
+                                <div class="position-relative">
+                                    <div id="wheel-container">
+                                        <div id="wheel"></div>
+                                    </div>
+                                    <div id="arrow-right"></div>
+                                </div>
+                            </div>
+                            <center><button class="btn btn-lg btn-primary rounded-pill col-4" id="spin">SPIN</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
